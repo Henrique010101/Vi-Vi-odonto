@@ -9,6 +9,19 @@
     --bg-blue: #104B79;
 }
 
+.font-black {
+    color: black;
+}
+
+.bg-light-grey {
+    background-color: var(--bg-light-grey);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+    color: white;
+}
+
 .img-nav-1 {
     height: 90px;
     margin-left: 3rem;
@@ -20,15 +33,6 @@
 
 .img-nav-mobile {
     height: 130px;
-}
-
-.bg-light-grey {
-    background-color: var(--bg-light-grey);
-}
-
-.bg-blue {
-    background-color: var(--bg-blue);
-    color: white;
 }
 
 .navbar{
