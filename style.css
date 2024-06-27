@@ -8,9 +8,26 @@
     --bg-light-grey: #EFEFEF;
     --bg-blue: #104B79;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 9px;
+    background-color: var(--bg-blue)
+}
+
+strong{
+    color: var(--bg-blue);
+    font-weight: 500;
+}
 
 .font-black {
     color: black;
+}
+
+.font-banner-p {
+    font-size: 1.25rem;
 }
 
 .bg-light-grey {
@@ -59,12 +76,12 @@
 }
   
 .banner-1 {
-    background-image: url(./assests/banner-1.jpg);
+    background-image: url(./assests/banner/banner-1.jpg);
     
 }
   
 .banner-2{
-    
+    background-image: url(./assests/banner/banner-2.jpg);
 }
 
 .section2 {
@@ -75,11 +92,23 @@
     font-size: 1.25rem;
 }
 
+.scrollable {
+    height: 95%;
+    overflow: scroll;
+}
+
 @media (max-width: 500px) {
     .img-no-card {
        border-left: none;
        border-top: 2px solid var(--bg-blue);
        border-bottom: 2px solid var(--bg-blue);
+    }
+    .font-banner-titulo{
+        font-size: 1.1rem;
+    }
+    .font-banner-p{
+        padding-top: 1rem;
+        font-size: 1rem;
     }
 }
 @media (max-width: 400px) {
