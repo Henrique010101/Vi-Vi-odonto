@@ -107,21 +107,15 @@ strong{
     overflow: scroll;
 }
 
-.wave-container {
+.wave_sem_borda {
     position: relative;
-    width: 100%;
-    overflow: hidden;
 }
-.wave {
+
+svg {
     display: block;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: auto;
-}
-
-.wave_sem_borda {
-    margin-bottom: 1rem;
+    position: relative;
 }
 
 @media (max-width: 500px) {
