@@ -19,7 +19,7 @@
     background-color: var(--bg-blue)
 }
 
-strong{
+strong {
     color: var(--bg-blue);
     font-weight: 500;
 }
@@ -69,6 +69,10 @@ strong{
 .navbar-brand {
     margin: 0;
     padding: 0
+}
+.perfil-img {
+    font-size: 1.5rem;
+    max-width: 50px!important;
 }
 
 .banners {

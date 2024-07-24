@@ -34,7 +34,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end fs-5 fw-medium flex-grow-1 gap-4 pe-md-5">
+            <ul class="navbar-nav  justify-content-end fs-5 fw-medium flex-grow-1 gap-4 pe-md-5">
               <li class="nav-item">
                 <a class="nav-link d-flex justify-content-center" aria-current="page" href="#">Início</a>
               </li>
@@ -46,8 +46,8 @@
               </li>
               <li class="nav-item">
                 <a type="button" data-bs-toggle="modal" data-bs-target="#modal-perfil"
-                  class="py-1 border rounded-circle bg-blue-light btn d-flex nav-link d-flex justify-content-center"
-                  href="#"><i style="font-size: 1.5rem;" class="bi bi-person"></i>
+                  class="border rounded-circle bg-blue-light btn"
+                  href="#"><i class="perfil-img bi bi-person"></i>
                 </a>
               </li>
           </div>
@@ -280,24 +280,94 @@
 <!-- MODAL LOGIN -->
 
 <div class="modal fade" id="modal-perfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <button type="button" class="btn-close p-1" data-bs-dismiss="modal" aria-label="Close"></button>
-      <div class="d-flex justify-content-center">
-        <h1 class="modal-title text-center d-flex fs-5" id="staticBackdropLabel">Login</h1>
-      </div>
-      <div class="modal-body">
-          <form>
-
+    aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-flex justify-content-center pt-4">
+          <h1 class="modal-title text-center fs-4 fw-bold" id="modalLabel">Login</h1>
+        </div>
+        <div class="modal-body">
+          <form action="/login" method="post">
+            <fieldset>
+              <div class="mb-3">
+                <input type="text" id="username" name="username" class="bg-light-grey form-control" placeholder="Nome de usuário" required>
+              </div>
+              <div class="mb-3">
+                <input type="password" id="password" name="password" class="bg-light-grey form-control" placeholder="Senha" required>
+              </div>
+              <div class="d-flex justify-content-center pt-3 gap-2">
+                <button type="submit" class="btn btn-primary col-6">Entrar</button>
+              </div>
+            </fieldset>
           </form>
-      </div>
-      <div class="d-flex p-1 justify-content-center">
-        <a>Não tem uma contra? REGISTRE-SE!</a>
-        <button type="button" class="btn btn-primary">Entrar</button>
+        </div>
+        <div class="d-flex pb-4 align-items-center justify-content-center flex-column">
+          <strong class="font-black text-decoration-none">Não tem uma conta? 
+          <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-registro" class="p-1 fw-semibold text-decoration-none">
+            Registre-se!
+          </a></strong>
+        </div>
       </div>
     </div>
   </div>
-</div>
+
+
+<!-- MODAL REGISTRO  -->
+
+<div class="modal fade" id="modal-registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="modalRegistroLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-flex justify-content-center pt-4">
+          <h1 class="modal-title text-center fs-4 fw-bold" id="modalRegistroLabel">Registro</h1>
+        </div>
+        <div class="modal-body">
+          <form class="" data-formulario>
+            <fieldset class="mb-3">
+              <input name="nome" id="nome" class="bg-light-grey form-control" placeholder="Nome de usuário" type="text" minlength="3" required/>
+              <span class="mensagem-erro text-danger"></span>
+            </fieldset>
+      
+            <fieldset class="mb-3">
+              <input name="email" id="email" class="bg-light-grey form-control" placeholder="Senha" type="email" minlength="4" required/>
+              <span class="mensagem-erro text-danger"></span>
+            </fieldset>
+      
+            <fieldset class="mb-3">
+              <input name="cpf" id="cpf" class="bg-light-grey form-control" placeholder="CPF ( apenas números )" type="text" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required />
+              <span class="mensagem-erro text-danger"></span>
+            </fieldset>
+      
+            <fieldset class="mb-3">
+              <input name="aniversario" id="aniversario" class="bg-light-grey form-control" placeholder="Data de nascimento" type="date" required/>
+              <span class="mensagem-erro text-danger"></span>
+            </fieldset>
+      
+            <fieldset class="form-check mb-3">
+              <input name="termos" class="form-check-input" type="checkbox" id="termos" required>
+              <label class="form-check-label" for="termos">
+                Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+                descrito na Política de Privacidade.
+              </label>
+              <span class="mensagem-erro text-danger"></span>
+            </fieldset>
+      
+            <div class="d-flex justify-content-center pt-3 gap-2">
+              <button type="submit" class="btn btn-primary col-6" id="enviar" data-botao-enviar>Avançar</button>
+              <span class="mensagem-erro text-danger"></span>
+            </div>
+          </form>
+        </div>
+        <div class="d-flex pb-4 align-items-center justify-content-center flex-column">
+          <strong class="font-black text-decoration-none">Ja tem uma conta? 
+          <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-perfil" class="p-1 fw-semibold text-decoration-none">
+            Entre!
+          </a></strong>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </html>
