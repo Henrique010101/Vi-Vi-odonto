@@ -13,6 +13,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./style.css">
   <script defer src="scripts.js"></script>
 </head>
@@ -95,9 +97,8 @@
 
   <section style="height: 110vh;" class="p-md-5 p-2 bg-light-grey">
     <h2 class="text-center my-4">Áreas de atuação</h2>
-    <article
-      class="p-md-3 container-lg-none container-xl row mx-auto g-3 column-gap-4 justify-content-center scrollable">
-      <div class="col-11 card mb-3 " style="max-width: 540px;">
+    <article class="p-md-3 container-none container-xxl row mx-auto g-3 column-gap-4 justify-content-center scrollable">
+      <div class="col-11 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-1.jpg" class="img-fluid rounded-start" alt="...">
@@ -222,53 +223,57 @@
       </div>
     </article>
   </section>
-
-  <section class="bg-blue wave-sem-borda">
-    <svg class="bg-light-grey wave-sem-borda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  
+  <section class="bg-blue d-block wave">
+    <svg class="bg-light-grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#104B79" fill-opacity="1"
         d="M0,288L80,261.3C160,235,320,181,480,176C640,171,800,213,960,208C1120,203,1280,149,1360,122.7L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
       </path>
     </svg>
 
-    <article class="wave-sem-borda w-100 py-3 justify-content-center align-items-center bg-blue d-flex col-10 col-md-6">
+    <article class= "flex-column w-100 py-3 justify-content-center align-items-center bg-blue d-flex col-10 col-md-6">
+
       <h2 class="text-center m-0">Conheça nossos doutores!</h2>
-      <img href="./assests/vivian-1.png">
-      <img href="./assests/vivian-2.png">
-      <div class="bg-light-grey">
-      </div>
+      <div class="d-flex w-100">
+        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+          <swiper-slide>Slide 1</swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+          <swiper-slide>Slide 4</swiper-slide>
+        </swiper-container>
+
+        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+          <swiper-slide>Slide 1</swiper-slide>
+          <swiper-slide>Slide 2</swiper-slide>
+          <swiper-slide>Slide 3</swiper-slide>
+          <swiper-slide>Slide 4</swiper-slide>
+        </swiper-container>
+      
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </div>
     </article>
 
-    <svg class="bg-light-grey wave-sem-borda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#104B79" fill-opacity="1"
-        d="M0,288L80,261.3C160,235,320,181,480,176C640,171,800,213,960,208C1120,203,1280,149,1360,122.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z">
-      </path>
-    </svg>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+
   </section>
-    <footer class="bg-blue wave-sem-borda">
-      <footer>
-        <footer class="text-center rodape">
-
-          <svg class="bg-light-grey wave-sem-borda" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#104B79" fill-opacity="1"
-              d="M0,160L80,149.3C160,139,320,117,480,138.7C640,160,800,224,960,240C1120,256,1280,224,1360,208L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z">
-            </path>
-          </svg>
-
-          <section class="container p-4 pb-0">
-            <a href="https://wa.me/5511953946555" class="btn btn-lg bg-blue" target="_blank"><i
-                class="bi bi-whatsapp"></i></a>
-            <a href="https://www.linkedin.com/in/henrique-guimar%C3%A3es-35426b233/" class="btn btn-lg bg-blue"
-              target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/Henrique010101" class="btn btn-lg bg-blue" target="_blank"><i
-                class="bi bi-github"></i></a>
-          </section>
-          <article class="p-3">
-            <p>2024 <i class="bi bi-c-circle"></i> Desenvolvido por Henrique Guimarães Moreno | Projeto fictício sem
-              fins
-              comerciais.</p>
-          </article>
-        </footer>
-      </footer>
+  
+    <footer class="bg-blue wave">
+      <div class="d-block text-center rodape">
+        <section class="container p-4 pb-0">
+          <a href="https://wa.me/5511953946555" class="btn btn-lg bg-blue" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/in/henrique-guimar%C3%A3es-35426b233/" class="btn btn-lg bg-blue" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/Henrique010101" class="btn btn-lg bg-blue" target="_blank"><i class="bi bi-github"></i></a>
+        </section>
+    
+        <article class="p-3">
+          <p>2024 <i class="bi bi-c-circle"></i> Desenvolvido por Henrique Guimarães Moreno | Projeto fictício sem fins comerciais.</p>
+        </article>
+      </div>
     </footer>
     
 
@@ -336,11 +341,6 @@
             </fieldset>
       
             <fieldset class="mb-3">
-              <input name="cpf" id="cpf" class="bg-light-grey form-control" placeholder="CPF ( apenas números )" type="text" minlength="11" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required />
-              <span class="mensagem-erro text-danger"></span>
-            </fieldset>
-      
-            <fieldset class="mb-3">
               <input name="aniversario" id="aniversario" class="bg-light-grey form-control" placeholder="Data de nascimento" type="date" required/>
               <span class="mensagem-erro text-danger"></span>
             </fieldset>
@@ -355,7 +355,7 @@
             </fieldset>
       
             <div class="d-flex justify-content-center pt-3 gap-2">
-              <button type="submit" class="btn btn-primary col-6" id="enviar" data-botao-enviar>Avançar</button>
+              <button type="submit" class="btn btn-primary col-6" id="enviar" data-botao-enviar>Confirmar</button>
               <span class="mensagem-erro text-danger"></span>
             </div>
           </form>
@@ -369,5 +369,4 @@
       </div>
     </div>
   </div>
-
 </html>
