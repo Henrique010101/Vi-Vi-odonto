@@ -48,8 +48,7 @@
               </li>
               <li class="nav-item">
                 <a type="button" data-bs-toggle="modal" data-bs-target="#modal-perfil"
-                  class="border rounded-circle bg-blue-light btn"
-                  href="#"><i class="perfil-img bi bi-person"></i>
+                  class="border rounded-circle bg-blue-light btn" href="#"><i class="perfil-img bi bi-person"></i>
                 </a>
               </li>
           </div>
@@ -74,7 +73,8 @@
           modernos</strong>, a clínica oferece uma ampla gama de procedimentos odontológicos, desde
         <strong>limpeza</strong> e <strong>restaurações</strong> até <strong>implantes</strong> e
         <strong>ortodontia</strong>. Aqui, todos os pacientes são bem-vindos e recebem um atendimento
-        <strong>personalizado</strong>, visando sempre a saúde bucal e o sorriso radiante de cada um."</p>
+        <strong>personalizado</strong>, visando sempre a saúde bucal e o sorriso radiante de cada um."
+      </p>
       <div class="d-none d-md-flex justify-content-center btn-sobre-grande col-8 container mt-3 mb-5">
         <button type="button" class="btn bg-blue col-12 py-2 fs-5 fw-semibold">Agende sua consulta!</button>
       </div>
@@ -223,7 +223,7 @@
       </div>
     </article>
   </section>
-  
+
   <section class="bg-blue d-block wave">
     <svg class="bg-light-grey" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#104B79" fill-opacity="1"
@@ -231,142 +231,210 @@
       </path>
     </svg>
 
-    <article class= "flex-column w-100 py-3 justify-content-center align-items-center bg-blue d-flex col-10 col-md-6">
-
-      <h2 class="text-center m-0">Conheça nossos doutores!</h2>
-      <div class="d-flex w-100">
-        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-          <swiper-slide>Slide 1</swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide>
-        </swiper-container>
-
-        <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
-          <swiper-slide>Slide 1</swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-          <swiper-slide>Slide 3</swiper-slide>
-          <swiper-slide>Slide 4</swiper-slide>
-        </swiper-container>
-      
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <article class="bg-blue pb-4"><h2 class="text-center pt-5 pb-3">Conheça nossos doutores!</h2>
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+    <div class="swiper mySwiper my-5"><h4 class="text-center d-block py-2 d-md-none">Dra. Vivian</h4>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+      </div>
+      <h4 class="text-center py-2 d-none d-md-block">
+        Dra. Vivian
+      </h4>
     </div>
-    </article>
 
+    <div class="swiper mySwiper my-5"><h4 class="text-center d-block py-2 d-md-none">Dr. Vitor</h4>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+      </div>
+      <h4 class="text-center py-2 d-none d-md-block">
+        Dr. Vitor
+      </h4>
+    </div>
+  </div>
+  </article>
+  
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
     <script>
       var swiper = new Swiper(".mySwiper", {
         effect: "cards",
         grabCursor: true,
+        spaceBetween: 30,
       });
     </script>
 
   </section>
-  
-    <footer class="bg-blue wave">
-      <div class="d-block text-center rodape">
-        <section class="container p-4 pb-0">
-          <a href="https://wa.me/5511953946555" class="btn btn-lg bg-blue" target="_blank"><i class="bi bi-whatsapp"></i></a>
-          <a href="https://www.linkedin.com/in/henrique-guimar%C3%A3es-35426b233/" class="btn btn-lg bg-blue" target="_blank"><i class="bi bi-linkedin"></i></a>
-          <a href="https://github.com/Henrique010101" class="btn btn-lg bg-blue" target="_blank"><i class="bi bi-github"></i></a>
-        </section>
-    
-        <article class="p-3">
-          <p>2024 <i class="bi bi-c-circle"></i> Desenvolvido por Henrique Guimarães Moreno | Projeto fictício sem fins comerciais.</p>
-        </article>
-      </div>
-    </footer>
-    
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+  <div class="bg-blue d-block wave">
+  <svg class="bg-blue d-block wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#EFEFEF" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,186.7C384,203,480,213,576,186.7C672,160,768,96,864,90.7C960,85,1056,139,1152,154.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </div>
+
+  <section class="py-4 py-md-2 bg-light-grey">
+
+    <h2 class="text-center py-3 py-md-0 pb-md-4">Conheça todas as nossas facilidades</h2>
+
+    <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-3 p-3">
+      <div class="divs-facilidades d-flex">
+        <div><i class="bi bi-x-diamond fw-bold fs-1 escrito-azul"></i></div>
+        <div>
+          <div class="ms-3 mb-1 escrito-azul fw-bold">PAGUE PELO PIX</div>
+          <div class="texto-menor ms-3">ganhe 5% OFF em pagamentos via PIX</div>
+        </div>
+      </div>
+
+      <div class="divs-facilidades d-flex">
+        <div><i class="bi bi-arrow-repeat fw-bold fs-1 escrito-azul"></i></div>
+        <div>
+          <div class="ms-3 mb-1 escrito-azul fw-bold">DOIS MESES</div>
+          <div class="texto-menor ms-3">Fique livre para retornar em até 60 dias..</div>
+        </div>
+      </div>
+
+      <div class="divs-facilidades d-flex">
+        <div><i class="bi bi-flower1 fw-bold fs-1 escrito-azul"></i></div>
+        <div>
+          <div class="ms-3 mb-1 escrito-azul fw-bold">SUSTENTABILIDADE</div>
+          <div class="texto-menor ms-3">Dentista responsavél, que respeita o meio ambiente.</div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="bg-blue d-block wave">
+    <svg class="bg-light-grey d-block wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#104B79" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,186.7C384,203,480,213,576,186.7C672,160,768,96,864,90.7C960,85,1056,139,1152,154.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </div>
+
+  <footer class="bg-blue wave">
+    <div class="d-block text-center rodape">
+      <section class="container p-4 pb-0">
+        <a href="https://wa.me/5511953946555" class="btn btn-lg bg-blue" target="_blank"><i
+            class="bi bi-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/henrique-guimar%C3%A3es-35426b233/" class="btn btn-lg bg-blue"
+          target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/Henrique010101" class="btn btn-lg bg-blue" target="_blank"><i
+            class="bi bi-github"></i></a>
+      </section>
+
+      <article class="p-3">
+        <p>2024 <i class="bi bi-c-circle"></i> Desenvolvido por Henrique Guimarães Moreno | Projeto fictício sem fins
+          comerciais.</p>
+      </article>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 <!-- MODAL LOGIN -->
 
 <div class="modal fade" id="modal-perfil" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="d-flex justify-content-center pt-4">
-          <h1 class="modal-title text-center fs-4 fw-bold" id="modalLabel">Login</h1>
-        </div>
-        <div class="modal-body">
-          <form action="/login" method="post">
-            <fieldset>
-              <div class="mb-3">
-                <input type="text" id="username" name="username" class="bg-light-grey form-control" placeholder="Nome de usuário" required>
-              </div>
-              <div class="mb-3">
-                <input type="password" id="password" name="password" class="bg-light-grey form-control" placeholder="Senha" required>
-              </div>
-              <div class="d-flex justify-content-center pt-3 gap-2">
-                <button type="submit" class="btn btn-primary col-6">Entrar</button>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-        <div class="d-flex pb-4 align-items-center justify-content-center flex-column">
-          <strong class="font-black text-decoration-none">Não tem uma conta? 
-          <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-registro" class="p-1 fw-semibold text-decoration-none">
+  aria-labelledby="modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+      <div class="d-flex justify-content-center pt-4">
+        <h1 class="modal-title text-center fs-4 fw-bold" id="modalLabel">Login</h1>
+      </div>
+      <div class="modal-body">
+        <form action="/login" method="post">
+          <fieldset>
+            <div class="mb-3">
+              <input type="text" id="username" name="username" class="bg-light-grey form-control"
+                placeholder="Nome de usuário" required>
+            </div>
+            <div class="mb-3">
+              <input type="password" id="password" name="password" class="bg-light-grey form-control"
+                placeholder="Senha" required>
+            </div>
+            <div class="d-flex justify-content-center pt-3 gap-2">
+              <button type="submit" class="btn btn-primary col-6">Entrar</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+      <div class="d-flex pb-4 align-items-center justify-content-center flex-column">
+        <strong class="font-black text-decoration-none">Não tem uma conta?
+          <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-registro"
+            class="p-1 fw-semibold text-decoration-none">
             Registre-se!
           </a></strong>
-        </div>
       </div>
     </div>
   </div>
+</div>
 
 
 <!-- MODAL REGISTRO  -->
 
 <div class="modal fade" id="modal-registro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="modalRegistroLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-        <div class="d-flex justify-content-center pt-4">
-          <h1 class="modal-title text-center fs-4 fw-bold" id="modalRegistroLabel">Registro</h1>
-        </div>
-        <div class="modal-body">
-          <form class="" data-formulario>
-            <fieldset class="mb-3">
-              <input name="nome" id="nome" class="bg-light-grey form-control" placeholder="Nome de usuário" type="text" minlength="3" required/>
+  aria-labelledby="modalRegistroLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close position-absolute top-0 end-0 p-3" data-bs-dismiss="modal"
+        aria-label="Close"></button>
+      <div class="d-flex justify-content-center pt-4">
+        <h1 class="modal-title text-center fs-4 fw-bold" id="modalRegistroLabel">Registro</h1>
+      </div>
+      <div class="modal-body">
+        <form class="" data-formulario>
+          <fieldset class="mb-3">
+            <input name="nome" id="nome" class="bg-light-grey form-control" placeholder="Nome de usuário" type="text"
+              minlength="3" required />
+            <span class="mensagem-erro text-danger"></span>
+          </fieldset>
+
+          <fieldset class="mb-3">
+            <input name="email" id="email" class="bg-light-grey form-control" placeholder="Senha" type="email"
+              minlength="4" required />
+            <span class="mensagem-erro text-danger"></span>
+          </fieldset>
+
+          <fieldset class="mb-3">
+            <input name="aniversario" id="aniversario" class="bg-light-grey form-control"
+              placeholder="Data de nascimento" type="date" required />
+            <span class="mensagem-erro text-danger"></span>
+          </fieldset>
+
+          <fieldset class="mb-3">
+            <input name="cpf" id="cpf" class="bg-light-grey form-control" type="text" minlength="11"
+              placeholder="CPF" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required />
               <span class="mensagem-erro text-danger"></span>
-            </fieldset>
-      
-            <fieldset class="mb-3">
-              <input name="email" id="email" class="bg-light-grey form-control" placeholder="Senha" type="email" minlength="4" required/>
-              <span class="mensagem-erro text-danger"></span>
-            </fieldset>
-      
-            <fieldset class="mb-3">
-              <input name="aniversario" id="aniversario" class="bg-light-grey form-control" placeholder="Data de nascimento" type="date" required/>
-              <span class="mensagem-erro text-danger"></span>
-            </fieldset>
-      
-            <fieldset class="form-check mb-3">
-              <input name="termos" class="form-check-input" type="checkbox" id="termos" required>
-              <label class="form-check-label" for="termos">
-                Li e estou ciente quanto às condições de tratamento dos meus dados conforme
-                descrito na Política de Privacidade.
-              </label>
-              <span class="mensagem-erro text-danger"></span>
-            </fieldset>
-      
-            <div class="d-flex justify-content-center pt-3 gap-2">
-              <button type="submit" class="btn btn-primary col-6" id="enviar" data-botao-enviar>Confirmar</button>
-              <span class="mensagem-erro text-danger"></span>
-            </div>
-          </form>
-        </div>
-        <div class="d-flex pb-4 align-items-center justify-content-center flex-column">
-          <strong class="font-black text-decoration-none">Ja tem uma conta? 
-          <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-perfil" class="p-1 fw-semibold text-decoration-none">
+          </fieldset>
+          <fieldset class="form-check mb-3">
+            <input name="termos" class="form-check-input" type="checkbox" id="termos" required>
+            <label class="form-check-label" for="termos">
+              Li e estou ciente quanto às condições de tratamento dos meus dados conforme
+              descrito na Política de Privacidade.
+            </label>
+            <span class="mensagem-erro text-danger"></span>
+          </fieldset>
+
+          <div class="d-flex justify-content-center pt-3 gap-2">
+            <button type="submit" class="btn btn-primary col-6" id="enviar" data-botao-enviar>Confirmar</button>
+            <span class="mensagem-erro text-danger"></span>
+          </div>
+        </form>
+      </div>
+      <div class="d-flex pb-4 align-items-center justify-content-center flex-column">
+        <strong class="font-black text-decoration-none">Ja tem uma conta?
+          <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modal-perfil"
+            class="p-1 fw-semibold text-decoration-none">
             Entre!
           </a></strong>
-        </div>
       </div>
     </div>
   </div>
+</div>
+
 </html>

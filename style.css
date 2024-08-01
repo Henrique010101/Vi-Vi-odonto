@@ -76,10 +76,30 @@ strong {
 }
 
 .wave.bg-blue svg {
-    margin-bottom: -1px; /* Ajuste conforme necessário */
-    margin-top: -1px; /* Ajuste conforme necessário */
-    display: block; /* Ou inline-block */
-  }
+    margin-bottom: -1px;
+    margin-top: -1px;
+    display: block;
+}
+
+.escrito-azul{
+    color: var(--bg-blue);
+}
+
+.divs-facilidades {
+    width: 325px;
+}
+
+.div-novidades {
+    width: 325px;
+}
+
+@media(min-width: 768px) {
+
+    .div-novidades {
+        width: 696px;
+    }
+
+}
 
 .banners {
     width: 100%;
