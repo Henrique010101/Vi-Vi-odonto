@@ -16,14 +16,13 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="./style.css">
-  <script defer src="scripts.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar-expand-lg navbar bg-light-grey border-bottom fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="img-nav-1" src="./assests/VI &VI nav.png"
+        <a class="navbar-brand" href="#"><img class="img-nav-1" src="./assests/vievi_logo1.png"
             alt="Logo da Vi e Vi odonto"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -32,40 +31,53 @@
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header bg-light-grey">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img class="img-nav-mobile"
-                src="./assests/VI &VI nav.png" alt="Logo da Vi e Vi odonto"></h5>
+                src="./assests/vievi_logo1.png" alt="Logo da Vi e Vi odonto"></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <ul class="navbar-nav  justify-content-end fs-5 fw-medium flex-grow-1 gap-4 pe-md-5">
+            <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3 gap-3 fw-medium">
               <li class="nav-item">
-                <a class="nav-link d-flex justify-content-center" aria-current="page" href="#">Início</a>
+                <a class="nav-link d-flex justify-content-center" aria-current="page" href="#inicio">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link d-flex justify-content-center" href="#">Sobre</a>
+                <a class="nav-link d-flex justify-content-center" href="#procedimentos">Procedimentos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center" href="#doutores">Doutores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link d-flex justify-content-center" href="#facilidades">Facilidades</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link d-flex justify-content-center" href="#contato">Contato</a>
               </li>
               <li class="nav-item">
-                <a type="button" data-bs-toggle="modal" data-bs-target="#modal-perfil"
-                  class="border rounded-circle bg-blue-light btn" href="#"><i class="perfil-img bi bi-person"></i>
+                <a type="button" id="perfil-icon" data-bs-toggle="modal" data-bs-target="#modal-perfil"
+                  class="border rounded-circle bg-blue-light btn btn-lg" href="#">
+                  <i class="perfil-img bi bi-person"></i>
                 </a>
+                <div id="user-section" class="dropdown" style="display: none;">
+                  <button id="user-info" class="dropdown-toggle btn bg-blue fw-medium" type="button" data-bs-toggle="dropdown"></button>
+                  <ul class="dropdown-menu">
+                    <li><a type="button" id="logout-button" class="dropdown-item fw-medium" href="#">Logout</a></li>
+                  </ul>
+              </div>
               </li>
           </div>
         </div>
       </div>
     </nav>
 
-    <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
-      <div class="banners-titulo bg-body-secondary mt-5 py-2">
-        <h3 class="fw-medium font-black font-banner-titulo">Boas-vindas à Clínica Dental! Um ambiente acolhedor e profissional
+    <section id="inicio" class="banners banner-2 d-flex flex-column justify-content-center text-center mt-5 pt-5">
+      <div class="banners-titulo bg-body-secondary py-md-5 py-3">
+        <h3 class="fw-semibold font-banner-titulo">Boas-vindas à Clínica Dental! Um ambiente acolhedor e profissional
           para sua saúde bucal.</h3>
       </div>
     </section>
   </header>
 
   <section class="section-sobre pt-5 p-md-0 d-md-flex align-items-center justify-content-center gap-md-5 bg-light-grey">
-    <div class="flex-column d-flex px-3 pt-md-3 pt-xxl-0 px-md-0 col-xxl-3 col-lg-5 col-md-7 gap-5">
+    <div class="flex-column d-flex px-3 pt-md-3 pt-xxl-0 ms-0 ps-lg-5 ms-xl-5 px-md-0 col-xxl-3 col-lg-5 col-md-7 gap-5">
       <h2 class="fs-4 fs-lg-3">Atendimento Prime com alta tecnologia para cuidar da saúde dos seus dentes com QUALIDADE</h2>
       <p class="p-sobre">Nós somos uma Cliníca odontológica com uma equipe qualificada e <strong>equipamentos
           modernos</strong>, a clínica oferece uma ampla gama de procedimentos odontológicos, desde
@@ -77,11 +89,12 @@
         <button type="button" class="btn bg-blue col-12 py-2 fs-5 fw-semibold">Agende sua consulta! <i class="bi bi-calendar-check ms-2"></i></button>
       </div>
     </div>
-    <div class="flex-md-column d-flex gap-md-5 mt-5 mt-xl-0 py-3 ms-0 ms-xl-5 col-lg-3 col-md-4 col-12">
+    <div class="flex-md-column d-flex gap-md-5 mt-5 mt-xl-0 p-3 px-md-0 ms-0 ps-lg-5 ms-xl-5 col-lg-3 col-md-4 col-12">
       <img class="img-no-card ms-lg-5 h-100 col-4 col-xxl-7 col-lg-9 col-md-11" src="./assests/img-no-card-1.jpg">
       <img class="img-no-card ms-lg-5 h-100 col-4 col-xxl-7 col-lg-9 col-md-11" src="./assests/img-no-card-2.jpg">
       <img class="img-no-card ms-lg-5 h-100 col-4 col-xxl-7 col-lg-9 col-md-11" src="./assests/img-no-card-3.jpg">
     </div>
+    
     <span class="d-flex d-md-none justify-content-center btn-sobre-pequeno col-10 container py-5">
       <button type="button" class="btn bg-blue py-2 fs-5 fw-semibold">Agende sua consulta! <i class="bi bi-calendar-check ms-2"></i></button>
     </span>
@@ -89,20 +102,20 @@
 
   <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
     <div class="banners-titulo bg-body-secondary py-md-5 py-3">
-      <h2 class="fw-medium font-black font-banner-titulo">Recupere sua confiança com um sorriso saudável e bonito.</h2>
+      <h2 class="fw-semibold font-banner-titulo" id="procedimentos">Recupere sua confiança com um sorriso saudável e bonito.</h2>
     </div>
   </section>
 
-  <section style="height: 100vh;" class="p-md-5 p-2 bg-light-grey">
-    <h2 class="text-center my-4">Áreas de atuação</h2>
+  <section style="height: 100vh;" id="procedimentos" class="p-md-5 p-2 bg-light-grey">
+    <h2 class="text-center my-4 texto-sombra-basica">Áreas de atuação</h2>
     <article class="p-md-3 container-none container-xxl row mx-auto g-3 column-gap-4 justify-content-center scrollable">
-      <div class="col-11 card mb-3" style="max-width: 540px;">
+      <div class="col-10 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-1.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body p-1 p-md-3">
               <h5 class="card-title">Clinico geral</h5>
               <p class="card-text">Avaliação geral, tratamentos básicos e prevenção.</p>
               <div class="d-flex justify-content-end btn-sobre-grande">
@@ -113,13 +126,13 @@
         </div>
       </div>
 
-      <div class="col-11 card mb-3" style="max-width: 540px;">
+      <div class="col-10 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-2.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body p-1 p-md-3">
               <h5 class="card-title">Estética dental</h5>
               <p class="card-text">Área que planeja a estética do sorriso, com clareamento dental a Laser, pequenas
                 plásticas gengivais, lentes de contato, coroas de cerâmica, etc..</p>
@@ -131,13 +144,13 @@
         </div>
       </div>
 
-      <div class="col-11 card mb-3" style="max-width: 540px;">
+      <div class="col-10 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-3.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body p-1 p-md-3">
               <h5 class="card-title">Próteses dentárias</h5>
               <p class="card-text">Área responsável por repor os dentes perdidos/ausentes, reestabelecendo a função
                 mastigatória e estética.</p>
@@ -149,13 +162,13 @@
         </div>
       </div>
 
-      <div class="col-11 card mb-3" style="max-width: 540px;">
+      <div class="col-10 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-4.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body p-1 p-md-3">
               <h5 class="card-title">Implante dentário</h5>
               <p class="card-text">Área que planeja a colocação de implantes ósseo integrados com a finalidade de
                 fixação de coroas em porcelana ou próteses totais fixas ou abotoadas.</p>
@@ -167,13 +180,13 @@
         </div>
       </div>
 
-      <div class="col-11 card mb-3" style="max-width: 540px;">
+      <div class="col-10 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-5.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body p-1 p-md-3">
               <h5 class="card-title">Ortodontia</h5>
               <p class="card-text">Especialidade responsável pela instalação de aparelhos ortodônticos com a finalidade
                 de correção de oclusão(mordida) e estética.</p>
@@ -185,13 +198,13 @@
         </div>
       </div>
 
-      <div class="col-11 card mb-3" style="max-width: 540px;">
+      <div class="col-10 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-6.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body p-1 p-md-3">
               <h5 class="card-title">Radiologia</h5>
               <p class="card-text">Sala destinada aos exames radiográficos em geral e Documentação Ortodôntica.</p>
               <div class="d-flex justify-content-end btn-sobre-grande">
@@ -202,13 +215,13 @@
         </div>
       </div>
 
-      <div class="col-11 card mb-3" style="max-width: 540px;">
+      <div class="col-10 card mb-3" style="max-width: 540px;">
         <div class="row g-0">
           <div class="col-md-4 p-md-3">
             <img src="./assests/cards/card-7.jpg" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
-            <div class="card-body">
+            <div class="card-body p-1 p-md-3">
               <h5 class="card-title">Odontopediatria</h5>
               <p class="card-text">Área onde os pequenos são tratados de forma ágil, focada em prevenção e cura, sem
                 traumas.</p>
@@ -229,14 +242,14 @@
       </path>
     </svg>
 
-    <article class="bg-blue pb-4"><h2 class="text-center pt-5 pb-3 texto-sombra-forte">Conheça nossos doutores!</h2>
+    <article id="doutores" class="bg-blue pb-4"><h2 class="text-center pt-5 pb-3 texto-sombra-forte">Conheça nossos doutores!</h2>
     <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
     <div class="swiper mySwiper my-5"><h4 class="text-center d-block py-2 d-md-none texto-sombra-forte">Dra. Vivian</h4>
       <div class="swiper-wrapper">
         <div class="swiper-slide border border-info"><img class="img-slide" src="/assests/vivian-1.png" alt="imagem Doutora Vivian"></div>
-        <div class="swiper-slide border border-info"></div>
+        <div class="swiper-slide border border-info p-2 d-flex justify-content-start flex-column"><i class="bi bi-info-circle py-1"></i><p class="fs-6 fw-normal">Desde cedo, Vivian sonhava em transformar sorrisos. Com uma carreira marcada por sucesso, ela se dedica ao máximo a cada paciente, acreditando que cada sorriso merece um cuidado especial.</p></div>
         <div class="swiper-slide border border-info"><img class="img-slide" src="/assests/vivian-2.png" alt="segunda imagem Doutora Vivian"></div>
-        <div class="swiper-slide border border-info"></div>
+        <div class="swiper-slide border border-info p-2 d-flex justify-content-start flex-column"><i class="bi bi-patch-check py-1"></i><p class="fs-6 fw-normal">Vivian é formada pela UNESP e tem vasta experiência como doutora em diversas clínicas. Sua precisão técnica e abordagem personalizada garantem tratamentos de alta qualidade.</p></div>
       </div>
       <h4 class="text-center py-2 d-none d-md-block texto-sombra-forte">
         Dra. Vivian
@@ -246,9 +259,9 @@
     <div class="swiper mySwiper my-5"><h4 class="text-center d-block py-2 d-md-none texto-sombra-forte">Dr. Vitor</h4>
       <div class="swiper-wrapper">
         <div class="swiper-slide border border-info"><img class="img-slide" src="/assests/vitor-1.jpeg" alt="imagem Doutor Vitor"></div>
-        <div class="swiper-slide border border-info"></div>
+        <div class="swiper-slide border border-info p-2 d-flex justify-content-start flex-column"><i class="bi bi-info-circle py-1"></i><p class="fs-6 fw-normal">Sempre foi apaixonado por cuidar das pessoas. Mostrando uma dedicação que reflete seu desejo de fazer a diferença na vida de seus pacientes.</p></div>
         <div class="swiper-slide border border-info"><img class="img-slide" src="/assests/vitor-2.jpeg" alt="segunda imagem Doutor Vitor"></div>
-        <div class="swiper-slide border border-info"></div>
+        <div class="swiper-slide border border-info p-2 d-flex justify-content-start flex-column"><i class="bi bi-patch-check py-1"></i><p class="fs-6 fw-normal">Formado em odontologia pela USP, Vitor tem experiência sólida como assistente, adquirida em diversos estágios. Sua dedicação e conhecimento garantem um atendimento cuidadoso e detalhado.</p></div>
       </div>
       <h4 class="text-center py-2 d-none d-md-block texto-sombra-forte">
         Dr. Vitor
@@ -270,7 +283,7 @@
   </section>
 
   <div class="bg-blue d-block wave">
-  <svg class="bg-blue d-block wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#EFEFEF" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,186.7C384,203,480,213,576,186.7C672,160,768,96,864,90.7C960,85,1056,139,1152,154.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  <svg class="bg-blue d-block wave" id="facilidades" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f0f4fa" fill-opacity="1" d="M0,128L48,138.7C96,149,192,171,288,186.7C384,203,480,213,576,186.7C672,160,768,96,864,90.7C960,85,1056,139,1152,154.7C1248,171,1344,149,1392,138.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   </div>
 
   <section class="py-4 py-md-2 bg-light-grey">
@@ -320,7 +333,7 @@
             class="bi bi-github"></i></a>
       </section>
 
-      <article class="p-3">
+      <article id="contato" class="p-3">
         <p>2024 <i class="bi bi-c-circle"></i> Desenvolvido por Henrique Guimarães Moreno | Projeto fictício sem fins
           comerciais.</p>
       </article>
@@ -345,14 +358,14 @@
         <h1 class="modal-title text-center fs-4 fw-bold" id="modalLabel">Login</h1>
       </div>
       <div class="modal-body">
-        <form action="/login" method="post">
+        <form id="login-form" action="/login" method="post">
           <fieldset>
             <div class="mb-3">
-              <input type="text" id="username" name="username" class="bg-light-grey form-control"
-                placeholder="Nome de usuário" required>
+              <input type="email" id="login-email" name="login-email" class="bg-light-grey form-control"
+                placeholder="Email" required>
             </div>
             <div class="mb-3">
-              <input type="password" id="password" name="password" class="bg-light-grey form-control"
+              <input type="password" id="login-password" name="login-password" class="bg-light-grey form-control"
                 placeholder="Senha" required>
             </div>
             <div class="d-flex justify-content-center pt-3 gap-2">
@@ -385,28 +398,28 @@
         <h1 class="modal-title text-center fs-4 fw-bold" id="modalRegistroLabel">Registro</h1>
       </div>
       <div class="modal-body">
-        <form class="" data-formulario>
+        <form id="register-form" data-formulario>
           <fieldset class="mb-3">
-            <input name="nome" id="nome" class="bg-light-grey form-control" placeholder="Nome de usuário" type="text"
+            <input name="nome" id="name" class="bg-light-grey form-control" placeholder="Nome de usuário" type="text"
               minlength="3" required />
             <span class="mensagem-erro text-danger"></span>
           </fieldset>
 
           <fieldset class="mb-3">
-            <input name="email" id="email" class="bg-light-grey form-control" placeholder="Senha" type="email"
+            <input name="email" id="email" class="bg-light-grey form-control" placeholder="Email" type="email"
               minlength="4" required />
             <span class="mensagem-erro text-danger"></span>
           </fieldset>
 
           <fieldset class="mb-3">
-            <input name="aniversario" id="aniversario" class="bg-light-grey form-control"
-              placeholder="Data de nascimento" type="date" required />
+            <input name="password" id="password" class="bg-light-grey form-control"
+              placeholder="Senha" type="password" minlength="4" required />
             <span class="mensagem-erro text-danger"></span>
           </fieldset>
 
           <fieldset class="mb-3">
-            <input name="cpf" id="cpf" class="bg-light-grey form-control" type="text" minlength="11"
-              placeholder="CPF" maxlength="14" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" required />
+            <input name="password" id="confirm-password" class="bg-light-grey form-control" type="password"
+              placeholder="Confirmar senha" minlength="4" required />
               <span class="mensagem-erro text-danger"></span>
           </fieldset>
           <fieldset class="form-check mb-3">
@@ -434,5 +447,5 @@
     </div>
   </div>
 </div>
-
+<script src="main.js"></script>
 </html>

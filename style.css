@@ -6,7 +6,7 @@
 
 }
 :root {
-    --bg-light-grey: #EFEFEF;
+    --bg-light-grey: #f0f4fa;
     --bg-blue: #104C79;
     --bg-blue-light: #308DD6;
     --font-black: rgba(0, 0, 0, 0.7);
@@ -27,10 +27,6 @@ strong {
 
 .font-black {
     color: var(--font-black);
-}
-
-.font-banner-p {
-    font-size: 1.25rem;
 }
 
 .bg-light-grey {
@@ -55,19 +51,6 @@ strong {
     margin-left: 3rem;
 }
 
-.img-no-card {
-    border-left: 3px solid var(--bg-blue);
-}
-
-.img-nav-mobile {
-    height: 130px;
-}
-
-.img-slide {
-    width: auto;
-    height: 100%;
-}
-
 .navbar{
     padding: 0;
 }
@@ -76,9 +59,31 @@ strong {
     margin: 0;
     padding: 0
 }
+
+.navbar-nav{
+    font-size: 1.15rem;
+}
+
+.nav-link {
+    
+}
+
+.img-nav-mobile {
+    height: 130px;
+}
+
 .perfil-img {
     font-size: 1.5rem;
     max-width: 50px!important;
+}
+
+.img-no-card {
+    border-left: 3px solid var(--bg-blue);
+}
+
+.img-slide {
+    width: auto;
+    height: 100%;
 }
 
 .texto-sombra-basica {
@@ -95,7 +100,7 @@ strong {
     display: block;
 }
 
-.escrito-azul{
+.escrito-azul {
     color: var(--bg-blue);
 }
 
@@ -118,7 +123,6 @@ strong {
 
 .banners-titulo {
     --bs-bg-opacity: .4;
-
 }
   
 .banner-1 {
@@ -159,22 +163,26 @@ strong {
     background-color: var(--bg-blue-light);
   }
 
-@media(min-width: 768px) {
+@media(max-width: 768px) {
 
+    .img-no-card {
+        border-left: none;
+        border-top: 2px solid var(--bg-blue);
+        border-bottom: 2px solid var(--bg-blue);
+    }
     .div-novidades {
         width: 696px;
     }
     .section-sobre {
         height: 95%;
-    } 
+    }
+    .nav-link {
+        border: none;
+    }
 }
 
 @media (max-width: 500px) {
-    .img-no-card {
-       border-left: none;
-       border-top: 2px solid var(--bg-blue);
-       border-bottom: 2px solid var(--bg-blue);
-    }
+    
     .font-banner-titulo{
         font-size: 1.1rem;
     }
@@ -187,4 +195,11 @@ strong {
     .p-sobre {
         font-size: 1rem!important;
     }
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    color: var(--bg-blue);
+    background-color: var(--bg-light-grey)!important;
 }
