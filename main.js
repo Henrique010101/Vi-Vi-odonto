@@ -40,7 +40,6 @@ async function registerUser(event) {
         alert(data.msg);
 
         if (response.ok) {
-            // Limpa os campos do formulário após o registro
             nameElement.value = '';
             emailElement.value = '';
             passwordElement.value = '';
@@ -104,7 +103,7 @@ async function displayUserProfile() {
         return;
     }
 
-    const userId = getUserIdFromToken(token); // Obtendo o ID do usuário
+    const userId = getUserIdFromToken(token);
 
     try {
         const response = await fetch(`${API_URL}/users/${userId}`, {
