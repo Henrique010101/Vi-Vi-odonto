@@ -2,7 +2,7 @@
 
 [Visit.](https://vi-vi-odonto.vercel.app/)
 
-![vivi-inicio](https://github.com/user-attachments/assets/2b8ac3b9-a30b-4699-8392-1b9752b52518)
+![vivi-inicio](https://github.com/user-attachments/assets/a45b4415-b161-4baf-9267-2762bd698bb0)
 ![vivi-sobre](https://github.com/user-attachments/assets/782689b4-a951-4ede-9379-6ca33438fc1e)
 ![vivi-procedimentos](https://github.com/user-attachments/assets/442946d4-f73e-4987-a39f-f7db91bccef3)
 ![vivi-doutores](https://github.com/user-attachments/assets/d1bc98a2-2f32-4266-a0ba-7519b5bab75d)
